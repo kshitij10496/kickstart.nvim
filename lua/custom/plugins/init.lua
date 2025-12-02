@@ -33,4 +33,26 @@ return {
       -- It auto-detects Rails projects and provides commands like :A, :R, :Emodel, etc.
     end,
   },
+  {
+    'ThePrimeagen/vim-be-good',
+    cmd = 'VimBeGood',
+  },
+  {
+    'nvim-treesitter/nvim-treesitter-context',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    opts = {
+      enable = true,
+      max_lines = 0,
+      min_window_height = 0,
+      line_numbers = true,
+      multiline_threshold = 20,
+      trim_scope = 'outer',
+      mode = 'cursor',
+      separator = nil,
+      zindex = 20,
+    },
+    keys = {
+      { '<leader>tc', '<cmd>TSContextToggle<CR>', desc = '[T]oggle [C]ontext' },
+    },
+  },
 }
