@@ -55,4 +55,7 @@ return {
       { '<leader>tc', '<cmd>TSContextToggle<CR>', desc = '[T]oggle [C]ontext' },
     },
   },
+  {
+    'folke/zen-mode.nvim',
+  },
 }
